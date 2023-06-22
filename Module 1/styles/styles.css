@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", Arial, sans-serif !important;
+}
+
+#wrapper{
+    background-color: #8080802e;
+}
+
+nav{
+    /* display: flex;
+    justify-content: space-around; */
+    box-shadow: 0 0 2px 0;
+    background-color: white;
+}
+
+#menu-btn{
+    display: none;
+}
+
+ul.list-container{
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+
+#style-picker{
+    border: none;
+    outline: none;
+}
+
+.link-container{
+    padding: 1rem;
+    width: 20%;
+    text-align: center;
+    border-right: 4px solid lightgreen;
+    border-left: 4px solid lightgreen;
+}
+
+.start-link,
+.dropdown-link{
+    width: 30%;
+    border:none;
+}
+
+.start-link{
+    text-align: right;
+}
+
+.dropdown-link{
+    text-align: left;
+}
+
+header,
+.author-section{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+header > article
+{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background: white;
+    box-shadow: 0 0 2px 0;
+    padding: 1rem;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+}
+
+img[alt="Logo"],
+.logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+img[alt="Logo"] + h1{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.logo > img{
+    height: inherit;
+}
+
+.logo-title{
+    margin-left: 1rem;
+}
+
+header > article > aside{
+    width: 73%;
+    text-align: right;
+}
+
+.ImageAndText{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ImageAndText-sub_container,
+.main-sub_container
+{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    border-top: 4px solid gray;
+    border-bottom: 4px solid gray;
+    padding: 1rem;
+}
+
+.text-container{
+    margin-left: 1rem;
+}
+
+.no-borders{
+    border: none;
+}
+
+footer{
+    margin-top: 2rem;
+    padding: 1rem;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+/* Images.html */
+
+.placeholder-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 23%;
+    margin: 0.8rem 0;
+}
+
+.placeholder-image-container > img{
+    width: 10rem;
+    padding: 1rem;
+}
+
+.placeholder-container{
+    justify-content: space-between;
+    border:none;
+    padding: 0rem;
+    flex-wrap:wrap;
+}
+
+.image-footer{
+    margin-top: 0.8rem;
+    padding: 0.5rem;
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+/* Bootstrap.html */
+
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.bootstrap-sub{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.bootstrap-sub-full{
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group-checkbox{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.form-group-checkbox > input{
+    margin-right: 0.8rem;
+}
+
+.main-sub_container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.form-container,
+.item-container,
+.card
+{
+    width: 30%;
+}
+
+.item-container{
+    background: white;
+    height: fit-content;
+}
+
+.item-container > ul{
+    list-style: none;
+    box-shadow: 0 0 2px 0;
+    padding-inline-start: 0;
+    margin-bottom: 0;
+}
+
+.item-container > ul > li{
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1px solid gray;
+}
+
+.card-container{
+    padding: 0.6rem;
+}
+
+.placeholder-box{
+    text-align: center;
+}
+
+.slider-container{
+    /* height: 30rem; */
+    display: flex;
+    overflow-y: hidden;
+    width: 70%;
+    text-align: center;
+    padding: 0.6rem;
+    border-top: 4px solid gray;
+}
+
+.image-container{
+    display: flex;
+    width: 30rem;
+    height: 30rem;
+    overflow-x: hidden;
+}
+
+.image-container > img{
+    height: inherit;
+    width: inherit;
+    margin: 0 0.8rem;
+    animation: slide-show infinite 2s;
+}
+
+@keyframes slide-show{
+    
+    100%{
+        transform: translateX(-32rem);
+    }
+}
+
+.bootstrap-sub_tablet{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.forty-width{
+    width: 40%;
+}
+
+.full-width{
+    width: 100%;
+}
+
+/* Sidebar for tablet view */
+
+.sidebar{
+    position: fixed;
+    display: none;
+    width: 20%;
+    flex-direction: column;
+    height: 100vh;
+    background: white;
+    justify-content: space-between;
+}
+
+.sidebar-mobile{
+    position: static;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    height: fit-content;
+}
+
+.sidebar > .header-section{
+    height: 40%;
+}
+
+.sidebar > .header-section > article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.nav-section{
+    height: 50%;
+}
+
+.nav-section > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+.nav-section > ul > li{
+    width: 100%;
+    text-align: center;
+    border-top: 4px solid lightgreen;
+    border-right: 0;
+    border-left: 0;
+}
+
+.nav-footer{
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.ImageAndText-sub_container-Mobile{
+    width: 100%;
+    flex-direction: column;
+}
+/*  */
